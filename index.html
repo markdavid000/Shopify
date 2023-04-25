@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="query.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
     integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -61,6 +62,9 @@
           </div>
         </li>
       </ul>
+      <ul class="main-nav-list display--expand_nav marketing-nav__user hidden_desk">
+        <li><button>Login</button></li>
+      </ul>
       <ul class="main-nav-list display--expand_nav marketing-nav__user">
         <li><button>Pricing</button></li>
         <li class="dropdown-container">
@@ -84,7 +88,7 @@
       <h2 class="hero_heading">Build an online business—no matter what business you’re in</h2>
       <form class="hero_form">
         <input type="text" class="hero_input" placeholder="Enter your email address">
-        <button class="hero_btn">Start free trial</button>
+        <button class="hero_btn nav-btn">Start free trial</button>
       </form>
       <p class="hero_description">Try Shopify free for 14 days, no credit card required. By entering your email, you
         agree to receive marketing emails from Shopify.</p>
@@ -140,7 +144,7 @@
           <P>Then I Met You</P>
         </a>
       </div>
-      <div class="business__grid__content">
+      <div class="business__grid__content business__grid__content_hidden">
         <img src="img/home-example-small-8bb452f93af6069b33cdc00d9fab7cacaa32d34684bda58e13eb25faadeb2b72.webp" alt=""
           class="business__grid__img">
         <a href="#" class="business__grid__link">
@@ -184,24 +188,127 @@
     </div>
 
     <div class="direction_grid">
-      <div class="step_img_box">
-        <video id="myVideo" width="640" height="360">
-          <source src="img/sell-animation-desktop-1b186d853b04bce6dbc12bb63bd5bc4bc1ff60cd1a06fd12f85261c8acc66d0a.webm"
-            type="video/mp4">
+      <div class="step_video_box">
+        <video id="myVideo" muted="muted" class="video__video" poster="img/thumbnail.png" autoplay>
+          <source type="video/webm"
+            src="img/sell-animation-desktop-1b186d853b04bce6dbc12bb63bd5bc4bc1ff60cd1a06fd12f85261c8acc66d0a.webm">
         </video>
         <div id="video-controls">
-          <button id="playButton" style="display: none;">Play</button>
-          <button id="pauseButton" style="display: none;">Pause</button>
           <button id="play-pause-button"></button>
         </div>
       </div>
-      <div class="step_text_box"></div>
-      <div class="step_text_box"></div>
-      <div class="step_img_box"></div>
-      <div class="step_img_box"></div>
-      <div class="step_text_box"></div>
+      <div class="step_text_box">
+        <h3 class="step_heading">Sell everywhere</h3>
+        <p class="step_description">Use one platform to sell products to anyone, anywhere—in person with Point of Sale
+          and online through your website, social media, and online marketplaces.</p>
+        <a href="#" class="step_link">Explore ways to sell <span>&rarr;</span></a>
+      </div>
+      <div class="step_text_box">
+        <h3 class="step_heading">Market your business</h3>
+        <p class="step_description">Take the guesswork out of marketing with built-in tools that help you create,
+          execute, and analyze digital marketing campaigns.</p>
+        <a href="#" class="step_link">Explore how to market your business <span>&rarr;</span></a>
+      </div>
+      <div class="step_img_box">
+        <img src="img/market-small-084eab2d72b510555838c446501d27dd7380585450efcaaa97453289b2b69c79.webp"
+          style="width: 100%;">
+      </div>
+      <div class="step_img_box">
+        <img src="img/market.png" style="width: 100%;">
+      </div>
+      <div class="step_text_box">
+        <h3 class="step_heading">Manage everything</h3>
+        <p class="step_description">Gain the insights you need to grow—use a single dashboard to manage orders,
+          shipping, and payments anywhere you go.</p>
+        <a href="#" class="step_link">Explore how to manage your business <span>&rarr;</span></a>
+      </div>
+    </div>
+
+    <div class="add_txt">
+      <h3>Empowering independent business <br /> owners everywhere</h3>
+      <h5>Millions of businesses in <strong>175 countries</strong> around the world have <br /> made over
+        <strong>$496 billion USD</strong> in sales using Shopify.
+      </h5>
+      <a href="#">Explore how to manage your business <span>&rarr;</span></a>
+    </div>
+
+    <div class="earth_container">
+      <img src="img/Screenshot_2023-04-25_031647-removebg-preview.png" class="earth" alt="">
+    </div>
+
+    <div class="testimonial">
+      <div class="testimonial_img_box">
+        <img
+          src="img/cee-cees-closet-testimonial@desktop-734a70d7875b7c3515558414f3a5ef4efd9eb396b17fb418355f15b078371233.jpg"
+          alt="" class="testimonial_img" />
+      </div>
+      <div class="testimonial_text_box">
+        <blockquote>
+          <h4 class="blockquote">“We’ve been able to build something in 3 years that a lot of brands haven’t actually
+            gotten to in 10
+            years.”</h4>
+          <img src="img/logo-cee-cees-closet-small-bbc2baa973603b707c4d17c8ac77b35b9097174340d500cc757354a7d868c456.png"
+            alt="" />
+          <h6>Chioma | Cee Cee’s Closet NYC</h6>
+        </blockquote>
+        <div>
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="play_icon" viewBox="0 0 24 24">
+              <path
+                d="M16.3944 11.9998L10 7.73686V16.2628L16.3944 11.9998ZM19.376 12.4158L8.77735 19.4816C8.54759 19.6348 8.23715 19.5727 8.08397 19.3429C8.02922 19.2608 8 19.1643 8 19.0656V4.93408C8 4.65794 8.22386 4.43408 8.5 4.43408C8.59871 4.43408 8.69522 4.4633 8.77735 4.51806L19.376 11.5838C19.6057 11.737 19.6678 12.0474 19.5146 12.2772C19.478 12.3321 19.4309 12.3792 19.376 12.4158Z">
+              </path>
+            </svg>Play Chioma and Uchenna's story</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="feautures">
+      <img src="img/cee-cees-closet-small-1d6b515579404482342748f0b67ff6e09836a47b648250d8d1b00e2a24b29faa.webp"
+        alt="" />
+      <img src="img/nalata-nalata-small-b5cd674cc9203997e3a72f2726c8aaa3d594a27c2f69001b4ad833939e9af5ce.webp" alt="" />
+      <img src="img/kirrin-finch-small-b85f000eede1716da6a496a95ff3836b300b5beaa57617ab834332b675ede0d6.webp" alt="" />
+      <img src="img/tokyo-bike-small-2295b7e1d183bae07eb36ad83451ec624cfe61bbec39e85877d40600f22115b2.webp" alt="" />
+      <img src="img/meso-goods-small-d5c7243d2e6e1e1677b5648f1e672701476c5df7d516a131013a46c7721c98b4.webp" alt="" />
+      <img src="img/coco-and-breezy-small-3cc3c1f7d5c50000624adec29ce71dae453821ce3813f0e34b2d3351b5f2b4b2.webp"
+        alt="" />
+      <img src="img/brooklyn-museum-small-3cbca35150e701329098cd95f21ec9388886479a5f781a515466b59d80d7b5bb.webp"
+        alt="" />
+      <img src="img/adore-me-small-b4e6488ccabc61cdaaf92d931a5b8a591a35d55982a796a5b582924a9563afb1.webp" alt="" />
     </div>
   </section>
+
+  <section class="help_section">
+    <div class="help_text_box">
+      <h3 class="help_heading">Get the help you need, <br /> every step of the way</h3>
+      <div class="help_grid">
+        <div class="help_grid_content">
+          <h6>Shopify support</h6>
+          <p>Contact support 24/7, whether you’re troubleshooting issues or looking for business advice.</p>
+          <a href="#" class="help_link">Contact support <span>&rarr;</span></a>
+        </div>
+        <div class="help_grid_content">
+          <h6>Shopify App Store</h6>
+          <p>Add features and functionality to your business with 6,000+ apps that integrate directly with Shopify.</p>
+          <a href="#" class="help_link">Visit the Shopify App Store <span>&rarr;</span></a>
+        </div>
+        <div class="help_grid_content">
+          <h6>Shopify Experts Marketplace</h6>
+          <p>Hire a Shopify expert to help you with everything from store setup to SEO.</p>
+          <a href="#" class="help_link">Explore the Shopify Experts Marketplace <span>&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="hero_img_box">
+      <img src="img/help@desktop-9a31a38edab7cba3389c5d71eccb81ab32d24e0eeb40c8eac3568d98bc179e1e.webp" alt=""
+        class="hero_img">
+    </div>
+  </section>
+
+  <div class="cta">
+    <h2 class="cta_heading">Start your business journey with Shopify</h2>
+    <p class="cta_description">Try Shopify for free, and explore all the tools and services you need to start,
+      run, and grow your business.</p>
+    <button class="nav-btn cta_btn">Start free trial</button>
+  </div>
 
   <script src="app.js"></script>
 </body>

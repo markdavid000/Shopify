@@ -1,0 +1,30 @@
+@media (max-width: 1243px) {
+  .business_text_box {
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
+  }
+}
+@media (max-width: 1122px) {
+  .main-nav-list {
+    display: none;
+  }
+
+  .hidden_desk {
+    display: flex !important;
+    margin-left: auto;
+  }
+
+  .hero_section {
+    flex-direction: column;
+    padding-top: 15rem;
+  }
+
+  .business__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .business__grid__content_hidden {
+    display: none;
+  }
+}
