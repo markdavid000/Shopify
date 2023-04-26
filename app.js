@@ -58,14 +58,6 @@ playPauseButton.addEventListener('click', function () {
   }
 });
 
-video.addEventListener('play', function () {
-  playPauseButton.style.visibility = 'hidden';
-});
-
-video.addEventListener('pause', function () {
-  playPauseButton.style.visibility = 'visible';
-});
-
 // // Get the canvas element
 // const canvas = document.getElementById('canvas');
 
@@ -126,3 +118,9 @@ video.addEventListener('pause', function () {
 
 // // Start the animation loop
 // animate();
+
+const btnNavEl = document.querySelector('.btn-mobile-nav');
+const headerEl = document.querySelector('.header');
+btnNavEl.addEventListener('click', function () {
+  headerEl.classList.toggle('nav-open');
+});
