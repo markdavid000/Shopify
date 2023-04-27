@@ -245,9 +245,6 @@ body {
   max-height: 0;
 }
 
-.accordion_list {
-}
-
 .accordion_list ul {
   list-style: none;
   border-left: 1px solid rgb(119, 119, 119);
