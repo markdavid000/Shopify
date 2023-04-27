@@ -452,6 +452,10 @@ body {
   font-size: 1.8rem;
 }
 
+.business__grid__link:hover h6 {
+  text-decoration: underline;
+}
+
 .business__heading {
   font-size: 3rem;
   font-weight: inherit;
