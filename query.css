@@ -83,6 +83,7 @@
     justify-content: space-between;
     margin: 0 3rem;
     text-decoration: none;
+    cursor: pointer;
   }
 
   .list_item_login,
@@ -92,15 +93,28 @@
     justify-content: center;
     padding: 1.3rem 0;
     border-radius: 5px;
+    transition: all 0.2s ease-in-out;
   }
 
   .list_item_login {
-    border: 2px solid #008060;
+    outline: 2px solid #008060;
+    margin-top: 2rem;
+  }
+
+  .list_item_login:hover {
+    outline: 2px none;
+    background: #008060;
+    color: #fff;
   }
 
   .list_item_start {
     color: #fff;
     background: #008060;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .list_item_start:hover {
+    background: #005645;
   }
 
   .border {
@@ -150,6 +164,10 @@
 
   .business__grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .business__grid__link p {
+    font-size: 1.4rem;
   }
 
   .business__grid__content_hidden {
@@ -207,11 +225,11 @@
   }
 
   .step_video_box {
-    margin-bottom: 25rem;
+    margin-bottom: 8rem;
   }
 
   .step_img_box {
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
   }
 
   .add_txt h3 {
@@ -283,9 +301,61 @@
   }
 }
 
+@media (max-width: 816px) {
+  .btt {
+    justify-content: center;
+    padding: 0 50px 50px 50px;
+  }
+
+  .footer_features {
+    justify-content: center;
+  }
+
+  .footer_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .footer_list_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .item_sale {
+    grid-row: 2/ 3;
+  }
+
+  .item_support {
+    grid-column: 2/3;
+  }
+
+  .footer_list {
+    margin-bottom: 1rem;
+  }
+
+  .footer_flex {
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+  }
+}
+
 @media (max-width: 747px) {
   .testimonial {
     flex-direction: column;
+  }
+
+  .testimonial_img_box {
+    height: 500px;
+  }
+
+  .hero_img_box a span {
+    display: none;
+  }
+
+  .hero_img_box a svg {
+    width: 40px;
+    height: 40px;
   }
 
   .business__grid {
@@ -374,5 +444,33 @@
 
   .testimonial {
     padding: 10rem 0 0 0;
+  }
+
+  .footer_features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 2rem;
+  }
+
+  .footer_features_link {
+    padding-bottom: 0;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .footer_features_link:hover {
+    box-shadow: none;
+  }
+
+  .footer__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .footer_grid_link {
+    display: flex;
+    align-items: center;
+    justify-items: center;
   }
 }
